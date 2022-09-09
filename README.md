@@ -1,2 +1,3 @@
-# goit-markup-hw-1
-HTML markup project #1
+# goit-markup-hw-3
+
+html-css markup project #3
