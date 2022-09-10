@@ -16,6 +16,7 @@
     --ourteam-background-color: #F5F4FA;
     --buttons-grey-color: #EEEEEE;
     --footer-link-color: rgba(255, 255, 255, 0.6);
+    --header-border-line: #ECECEC;
 }
 
 body {
@@ -24,7 +25,69 @@ body {
     color: var(--primery-text-color);
 }
 
-/* header */
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin: 0;
+}
+
+.container {
+    width: 1230px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.page-header {
+    padding: 25px 0 25px 0;
+    border-bottom: 1px solid var(--header-border-line);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-logo {
+    margin-right: 93px;
+}
+
+.nav-header {
+    display: flex;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list li:not(:first-child) {
+    margin-left: 50px;
+
+}
+
+.header-contacts {
+    display: flex;
+
+}
+
+.header-contacts li:not(:first-child) {
+    margin-left: 50px;
+
+}
+
 .logo {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -45,9 +108,7 @@ body {
 }
 
 
-ul {
-    list-style: none;
-}
+
 
 .nav-list .link.current {
     color: var(--main-blue-color);
@@ -88,6 +149,8 @@ ul {
 /* hero section */
 .hero {
     background-color: var(--footer-hero-background-color);
+    text-align: center;
+    padding: 200px 0 200px 0;
 }
 
 .main-heading {
@@ -96,10 +159,15 @@ ul {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
+
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--main-white-coloor);
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+
+    max-width: 696px;
 }
 
 .hero-btn {
@@ -115,7 +183,11 @@ ul {
     color: var(--main-white-coloor);
     cursor: pointer;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    display: inline-block;
+    padding: 10px 32px;
+    min-width: 216px;
 }
 
 /* section особливості */
@@ -133,6 +205,23 @@ ul {
     overflow: hidden;
 }
 
+.properties {
+    padding: 94px 0 94px 0;
+
+}
+
+.property-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 94px;
+
+}
+
+.property-item {
+    max-width: 270px;
+}
+
 .property-title {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
@@ -142,6 +231,7 @@ ul {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--title-black-color);
+    margin-bottom: 10px;
 }
 
 .property-dscr {
@@ -153,7 +243,7 @@ ul {
 /* section Чим ми займаємося */
 .whatwedo-title,
 .ourteam-title {
-    ont-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
@@ -163,7 +253,35 @@ ul {
     color: var(--title-black-color);
 }
 
+.whatwedo-title {
+    margin-bottom: 50px;
+}
+
+.whatwedo-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
 /* section Наша команда */
+.ourteam-section {
+    padding: 94px 0 94px 0;
+    background-color: var(--ourteam-background-color);
+}
+
+.ourteam-title {
+    margin-bottom: 50px;
+}
+
+.ourteam-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+
+
+
 .name {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
@@ -183,10 +301,15 @@ ul {
 /* footer */
 .footer {
     background-color: var(--footer-hero-background-color);
+    padding: 60px 0 60px 0;
 }
 
 .footer-studio-logo {
     color: var(--main-white-coloor);
+}
+
+.logo-footer {
+    margin-bottom: 20px;
 }
 
 .adress-link {
@@ -197,6 +320,10 @@ ul {
     letter-spacing: 0.03em;
     color: var(--main-white-coloor);
     text-decoration: none;
+}
+
+.adress-list li:not(:last-child) {
+    margin-bottom: 10px;
 }
 
 .adress-link:hover,

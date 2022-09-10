@@ -20,26 +20,32 @@
 
   <body>
     <header class="page-header">
-      <nav>
-        <a lang="en" href="./index.html" class="logo"
-          >Web<span class="header-studio-logo">Studio</span></a
-        >
-        <ul class="nav-list">
-          <li><a href="#" class="link current">Студія</a></li>
-          <li><a href="./portfolio.html" class="link">Портфоліо</a></li>
-          <li><a href="#" class="link">Контакти</a></li>
-        </ul>
-      </nav>
-      <ul class="header-contacts">
-        <li>
-          <a href="mailto:info@devstudio.com" class="header-link"
-            >info@devstudio.com</a
+      <div class="header container">
+        <nav class="nav-header">
+          <div class="header-logo">
+          <a lang="en" href="./index.html" class="logo"
+            >Web<span class="header-studio-logo">Studio</span></a
           >
-        </li>
-        <li>
-          <a href="tel:+380961111111" class="header-link">+38 096 111 11 11</a>
-        </li>
-      </ul>
+          </div>
+          <ul class="nav-list">
+            <li><a href="#" class="link current">Студія</a></li>
+            <li><a href="./portfolio.html" class="link">Портфоліо</a></li>
+            <li><a href="#" class="link">Контакти</a></li>
+          </ul>
+        </nav>
+        <ul class="header-contacts">
+          <li>
+            <a href="mailto:info@devstudio.com" class="header-link"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a href="tel:+380961111111" class="header-link"
+              >+38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+      </div>
     </header>
     <main>
       <section class="hero">
@@ -47,29 +53,32 @@
         <button class="hero-btn" type="button">Замовити послугу</button>
       </section>
       <section class="properties">
-        <h2 class="properties-title hidden">Особливості</h2>
-        <ul>
-          <li>
+
+        <div class="properties-style container">
+        <h2 class="hidden">Особливості</h2>
+
+        <ul class="property-list" >
+          <li class="propery-item">
             <h3 class="property-title">УВАГА ДО ДЕТАЛЕЙ</h3>
             <p class="property-dscr">
               Ідейні міркування, і навіть початок повсякденної роботи з
               формування позиції.
             </p>
           </li>
-          <li>
+          <li class="propery-item">
             <h3 class="property-title">ПУНКТУАЛЬНІСТЬ</h3>
             <p class="property-dscr">
               Завдання організації, особливо рамки і місце навчання кадрів тягне
               у себе.
             </p>
           </li>
-          <li>
+          <li class="propery-item">
             <h3 class="property-title">ПЛАНУВАННЯ</h3>
             <p class="property-dscr">
               Так само консультація з широким активом значною мірою зумовлює.
             </p>
           </li>
-          <li>
+          <li class="propery-item">
             <h3 class="property-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
             <p class="property-dscr">
               Значимість цих проблем настільки очевидна, що реалізація планових
@@ -77,10 +86,8 @@
             </p>
           </li>
         </ul>
-      </section>
-      <section>
-        <h2 class="whatwedo-title">Чим ми займаємося</h2>
-        <ul>
+        <h3 class="whatwedo-title">Чим ми займаємося</h2>
+        <ul class="whatwedo-list">
           <li>
             <img
               src="./images/img.what.we.do1.jpg"
@@ -103,11 +110,13 @@
             />
           </li>
         </ul>
+        </div>
       </section>
-      <section>
+      <section class="ourteam-section">
+        <div class="ourteam-block container">
         <h2 class="ourteam-title">Наша команда</h2>
-        <ul>
-          <li>
+        <ul class="ourteam-list">
+          <li class="ourteam-item">
             <img
               src="./images/img.our.team1.jpg"
               alt="Ігор Дем'яненко"
@@ -116,7 +125,7 @@
             <h3 class="name">Ігор Дем'яненко</h3>
             <p class="position" lang="en">Product Designer</p>
           </li>
-          <li>
+          <li class="ourteam-item">
             <img
               src="./images/img.our.team2.jpg"
               alt="Ольга Рєпіна"
@@ -125,7 +134,7 @@
             <h3 class="name">Ольга Рєпіна</h3>
             <p class="position" lang="en">Frontend Developer</p>
           </li>
-          <li>
+          <li class="ourteam-item">
             <img
               src="./images/img.our.team3.jpg"
               alt="Микола Тарасов"
@@ -134,7 +143,7 @@
             <h3 class="name">Микола Тарасов</h3>
             <p class="position" lang="en">Marketing</p>
           </li>
-          <li>
+          <li class="ourteam-item">
             <img
               src="./images/img.our.team4.jpg"
               alt="Михайло Єрмаков"
@@ -144,14 +153,18 @@
             <p class="position" lang="en">UI Designer</p>
           </li>
         </ul>
+        </div>
       </section>
     </main>
     <footer class="footer">
+      <div class="footer-items container">
+      <div class="logo-footer">
       <a lang="en" href="./index.html" class="logo"
         >Web<span class="footer-studio-logo">Studio</span></a
       >
+      </div>
       <address class="adress">
-        <ul>
+        <ul class="adress-list">
           <li>
             <a
               href="https://www.google.com/maps/place/Lesi+Ukrainky+Blvd,+26,+Kyiv,+Ukraine,+02000/@50.4265605,30.5364733,16.65z/data=!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858"
@@ -172,6 +185,7 @@
             >
           </li>
         </ul>
+      </div>
       </address>
     </footer>
   </body>
