@@ -216,15 +216,14 @@ ul {
 }
 
 .properties {
-    display: flex;
+
+    padding: 94px 0 94px 0;
 
 }
 
 .property-list {
     display: flex;
-    justify-content: space-between;
     gap: 30px;
-    padding: 94px 0 94px 0;
 }
 
 .property-item {
@@ -251,6 +250,7 @@ ul {
 
 /* section Чим ми займаємося */
 .whatwedo-section {
+    padding-top: 0;
     padding-bottom: 94px;
 
 }
@@ -302,7 +302,7 @@ ul {
     background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-    padding-bottom: 30px;
+
 }
 
 .ourteam-item img {
@@ -328,6 +328,7 @@ ul {
     line-height: 1.9;
     letter-spacing: 0.03em;
     text-align: center;
+    margin-bottom: 30px;
 }
 
 /* footer */
@@ -385,17 +386,19 @@ ul {
 }
 
 /* filteer section */
-.portfolio-main {
+/* .portfolio-main {
     padding: 94px 0 94px 0;
     background-color: var(--main-white-coloor);
+} */
+.portfolio-sectiion {
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .filer-btn-list {
     display: flex;
-    justify-content: space-between;
-    width: 590px;
-    margin-left: auto;
-    margin-right: auto;
+    justify-content: center;
+
     gap: 8px;
     margin-bottom: 50px;
 }
