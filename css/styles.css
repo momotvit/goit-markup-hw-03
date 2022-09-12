@@ -81,7 +81,7 @@ ul {
     align-items: center;
 }
 
-.nav-list li {
+.link {
     display: block;
     padding: 35px 0 35px 0;
 }
@@ -135,8 +135,8 @@ ul {
     text-decoration: none;
 }
 
-.nav-list .link:hover,
-.nav-list .link:focus {
+.link:hover,
+.link:focus {
     color: var(--main-blue-color);
 }
 
@@ -261,7 +261,7 @@ ul {
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
-    line-height: 1.66;
+    line-height: 1.166;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--title-black-color);
@@ -316,7 +316,7 @@ ul {
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.9;
+    line-height: 1.19;
     letter-spacing: 0.03em;
     color: var(--title-black-color);
     text-align: center;
@@ -325,7 +325,7 @@ ul {
 
 .position {
     font-size: 16px;
-    line-height: 1.9;
+    line-height: 1.19;
     letter-spacing: 0.03em;
     text-align: center;
     margin-bottom: 30px;
